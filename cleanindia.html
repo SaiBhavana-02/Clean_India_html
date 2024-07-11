@@ -1,44 +1,61 @@
 <html>
 <head>
-<title>Clean Indi</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Clean India</title>
 <style>
-    body{
-        background-color: #6c915b;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
-    #abc {
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
         text-align: center;
-        color: black;
-        margin-top: 150px;
-        font-size: 90px;
-        text-shadow: 2px 2px 5px white;
-        }
-    #def {
-        text-align: center;
-        color: black;
-        font-size: 90px;
-        margin-left: 130px;
-        text-shadow: 2px 2px 5px black;
+        padding: 14px 16px;
+        text-decoration: none;
     }
-    #a{
-        color: black;
-        margin-top: 80px;
-        margin-bottom: 80px;
-        font-size: 30px;
+    .navbar{
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
     }
-    #lin{
-        color: black;
-        font-size: 30px;
-        margin-left: 800px;
-        margin-right: 300px;
+    li a:hover {
+        background-color: #111;
+    }
+    #myVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
     }
 </style>
 </head>
 <body>
-    <i id="icon" class="fa fa-bars" style="font-size:48px;color:black;"></i>
-    <p id="a"><marquee behaviour="scroll" direction="right">Dream for a clean India by making clean tour surroundings!</marquee></p>
-    <h1 id="abc">CLEAN INDIA</h1>
-    <a id="lin" href="C:\Users\kvvam\OneDrive\Documents\desktopfiles\clickme.html">Click Me</a>
+    <video autoplay muted loop id="myVideo">
+        <source src="indiavideo.mp4" type="video/mp4">
+    </video>
+    <div class="navbar"> 
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="C:\Users\kvvam\Documents\cleanindia\contact.html">Contact</a></li>
+            <li><a href="C:\Users\kvvam\Documents\cleanindia\about.html">About</a></li>
+            <li style="float:right"><a class="active" href="C:\Users\kvvam\Documents\cleanindia\signup.html">SignUp</a></li>
+            <li style="float:right"><a class="active" href="C:\Users\kvvam\Documents\cleanindia\login.html">Login</a></li>
+        </ul>
+    </div>
 </body>
 </html>
